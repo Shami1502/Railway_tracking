@@ -1,0 +1,234 @@
+﻿
+body{
+    margin:0;
+    padding:0;
+}
+
+.uly {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: red;
+    height: 70px;
+    
+}
+
+li {
+    float: left;
+}
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        text-decoration: none;
+        font-size: 17px;
+        justify-content: center;
+    }
+
+        li a:hover:not(.active) {
+            opacity: 0.5;
+            color: white;
+        }
+.rail {
+    font-weight: bold;
+    color: darkgreen;
+    border-bottom: 2px solid yellow;
+    text-shadow: 1px 1px white;
+    font-size:25px;
+}
+
+.ali {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    float: right;
+    width: 100px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.ahmad {
+    background-image: url("pakistan-railways-640x457.jpg");
+    background-repeat: no-repeat;
+    filter: brightness(70%);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 500px;
+}
+
+    .ahmad:hover {
+        filter: brightness(100%);
+    }
+
+.btny {
+    justify-content: center;
+    text-align: center;
+    background-color: forestgreen;
+    color: white;
+    padding: 20px;
+    margin-top: 10%;
+    margin-left: 40%;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.pic1 {
+    background-image: url("download (2).jpg");
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-decoration: none;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 50px;
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    filter: brightness(70%);
+    box-shadow: 2px 2px 4px #000000;
+}
+
+
+    .pic1:hover {
+        color: forestgreen;
+        text-shadow: 2px 2px 4px #000000;
+        filter: brightness(100%);
+    }
+
+.fot {
+    background-color: black;
+    width: 100%;
+}
+
+.foty {
+    color: white;
+}
+
+.fot1 {
+    font-size: 25px;
+    padding: 20px;
+    margin:10px;
+    border-bottom: 3px solid green;
+}
+
+.aliy {
+    text-decoration: none;
+    padding: 10px;
+    color: grey;
+    line-height: 2.0;
+    font-size: 20px;
+}
+
+    .aliy:hover {
+        color: green;
+    }
+
+.bt {
+    color: grey;
+    padding: 20px;
+}
+
+.secnav {
+    width: 100%;
+    height: 20px;
+}
+
+.linky {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 20px;
+}
+
+.bar {
+    background-color: forestgreen;
+    margin: 20px;
+    border-radius: 12px;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    background-color:;
+}
+
+.linky:hover {
+    font-size: 15px;
+    opacity: 0.7;
+    color: white;
+}
+
+.box {
+    border-radius: 8px;
+}
+
+.about {
+    color: white;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10%;
+    margin-left: 40%;
+    font-size: 50px;
+}
+.tu{
+    width:0%;
+}
+@media(max-width:768px){
+    .uly {
+       
+        height: 60px;
+        opacity: 0.6;
+    }
+    .btny {
+       
+        margin-top: 25%;
+        margin-left: 40%;
+       
+    }
+
+
+    li a {
+      
+        padding: 12px;
+       
+        font-size: 14px;
+        
+    }
+
+    .pic5{
+        width:100%;
+        height:auto;
+    }
+    .pic1 {
+        
+        height:auto;
+        width: 100%;
+        
+        margin: 10px;
+        padding: 30px;
+        
+    }
+    .aliy {
+       
+        line-height: 2.5;
+        font-size: 17px;
+    }
+    .bar {
+       
+        margin: 1px;
+        
+    }
+    .linky {
+      
+        padding: 10px;
+    }  
+
+}

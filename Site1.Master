@@ -1,0 +1,390 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Railway_Tracking_System.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+   
+     <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/images/favicon-2.ico" type="image/ico" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <title> Live Railway Tracking</title>
+    <link href="StyleSheet2.css" rel="stylesheet" />
+ 
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        
+        
+body{
+    margin:0;
+    padding:0;
+    background-color:white;
+}
+
+.uly {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(4, 4, 4, 0.59);
+    height: 70px;
+    
+}
+
+
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        text-decoration: none;
+        font-size: 17px;
+        justify-content: center;
+    }
+
+        li a:hover:not(.active) {
+            opacity: 0.5;
+            color: white;
+        }
+.rail {
+    font-weight: bold;
+    color: darkgreen;
+    border-bottom: 2px solid yellow;
+    text-shadow: 1px 1px white;
+    font-size:25px;
+    float:left;
+}
+
+.ali {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    float: right;
+    width: 100px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.ahmad {
+    background-image: url("pakistan-railways-640x457.jpg");
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    filter: brightness(70%);
+    height: 500px;
+}
+
+    .ahmad:hover {
+        filter: brightness(100%);
+    }
+
+.btny {
+    justify-content: center;
+    text-align: center;
+    background-color: forestgreen;
+    color: white;
+    padding: 20px;
+    margin-top: 10%;
+    margin-left: 40%;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.pic1 {
+    background-image: url("download (2).jpg");
+    height: 290px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-decoration: none;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 50px;
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    filter: brightness(70%);
+    box-shadow: 2px 2px 4px #000000;
+}
+
+
+    .pic1:hover {
+        color: forestgreen;
+        text-shadow: 2px 2px 4px #000000;
+        filter: brightness(100%);
+    }
+
+.fot {
+    background-color: black;
+    width: 100%;
+}
+
+.foty {
+    color: white;
+}
+
+.fot1 {
+    font-size: 25px;
+    padding: 20px;
+    margin:10px;
+    border-bottom: 3px solid green;
+}
+
+.aliy {
+    text-decoration: none;
+    padding: 10px;
+    color: grey;
+    line-height: 2.0;
+    font-size: 20px;
+}
+
+    .aliy:hover {
+        color: green;
+    }
+
+.bt {
+    color: grey;
+    padding: 20px;
+    line-height:1.5;
+    font-size:15px;
+}
+
+.secnav {
+    width: 100%;
+    height: 20px;
+}
+.fonty{
+    float:right;
+}
+.linky {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 20px;
+    font-size:15px;
+}
+
+.bar {
+    background-color: forestgreen;
+    margin: 20px;
+    border-radius: 12px;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    background-color:;
+}
+
+.linky:hover {
+    font-size: 15px;
+    opacity: 0.7;
+    color: white;
+}
+
+.box {
+    border-radius: 8px;
+}
+
+.about {
+    color: white;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10%;
+    margin-left: 40%;
+    font-size: 50px;
+}
+.tu{
+    width:0%;
+}
+@media screen and (max-width:768px){
+    .uly {
+       
+        height: 60px;
+        opacity: 0.6;
+    }
+    .btny {
+       
+        margin-top: 25%;
+        margin-left: 40%;
+       
+    }
+    .rail {
+    font-size:15px;
+    
+}
+
+    li a {
+      
+        padding: 15px;
+       
+        font-size: 15px;
+        
+    }
+    .fonty{
+        float:left;
+    }
+
+    .pic5{
+        width:100%;
+        height:auto;
+    }
+    .pic1 {
+        
+        height:auto;
+        width: 100%;
+        
+        margin: 5px;
+        padding: 20px;
+        
+    }
+    .aliy {
+       
+        line-height: 2.5;
+        font-size: 17px;
+    }
+    .bar {
+       
+        margin: 1px;
+        
+    }
+    .linky {
+      
+        padding: 10px;
+    }
+    .fot1 {
+    font-size: 20px;
+    padding: 15px;
+    margin:7px;
+    
+}
+
+.aliy {
+   
+    padding: 10px;
+    color: grey;
+    line-height: 2.0;
+    font-size: 15px;
+}
+
+}
+    </style>
+</head>
+<body style="background-color:white;">
+    <form id="form1" runat="server">
+       <div class="ahmad" style="width:100%">
+     
+    <ul class="uly">
+        <li><a href="#contact"  ><img src="https://www.pakrail.gov.pk/favicon-2.ico" class="pic5" /></a></li>
+        <li><a href="#contact"  ><span class="rail ">Pakistan Railway</span></a></li>
+        <li class="fonty"><a href="logIN.aspx" >LogIN</a></li>
+        <li class="fonty"><a href="Contact .aspx">Contact</a></li>
+        <li class="fonty"> <a href="News.aspx">News</a></li>
+        
+        <li class="fonty" ><a href="AboutUS.aspx">About</a></li>
+        
+        <li class="fonty""> <a href="Home.aspx">Home</a></li>
+        
+        
+        
+                
+        
+        </ul>
+        
+      <div class= "d-flex align-items-start justify-content-center p-lg-5 flex-column shadow">
+            
+            <asp:Button ID="Button1" runat="server" class="text-upperclass btny" Text="LIVE TRACKING" />
+       </div>     
+      </div>
+       
+        <div style="margin:20px">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer>
+            <div class="fot">
+                <table width="100%" class="foty">
+                    <tr>
+                        <td width="50%">
+                            <table width="100%">
+                                <tr>
+                                    <th><img src="https://www.pakrail.gov.pk/images/logo.png" /></th>
+                                </tr>
+                                <tr>
+                                    <td class="bt" style="padding:20px;">Pakistan Railways provide an important mode of Transportation in the farthest corners of the country and brings them closer for Business, sight seeing, pilgrimage and education. It has been a great integrating force and forms the life line of the country by catering to its needs for large scale movement of people and freight.</td>
+                               </tr>
+                            </table>
+                        </td>
+                        <td width="22%">
+                            <table width="100%">
+                                <tr>
+                                    <th class="fot1"> Services</th>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="aliy">Live Tracking</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="Train Update.aspx" class="aliy">Train Update</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="aliy">Train Schedule</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="Station Update.aspx" class="aliy">Station Update</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="aliy">Station Schedule</a></td>
+                                </tr>
+                                 <tr>
+                                    <td><a href="#"  class="aliy" ></a></td>
+                                </tr>
+                            </table>
+
+                        </td>
+                        <td width="6%">
+
+                        </td>
+                        
+                        <td width="22%">
+                             <table width="100%">
+                                <tr>
+                                    <th class="fot1">  Links</th>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="aliy">Home</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="aliy">About Us</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="aliy">Contact Us</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="aliy">Terms </a></td>
+                                </tr>
+                                  <tr>
+                                    <td><a href="#"  class="aliy" > Conditions</a></td>
+                                </tr>
+                                  <tr>
+                                    <td><a href="#"  class="aliy" ></a></td>
+                                </tr>
+                            </table>
+                          
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+        </footer>
+    </form>
+</body>
+</html>
